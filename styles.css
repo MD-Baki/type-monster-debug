@@ -186,6 +186,24 @@ button {
   top: 0;
 }
 
+main {
+  padding-bottom: 30px;
+}
+
+.question-section {
+  background: linear-gradient(92.49deg,
+      rgba(255, 255, 255, 0.1) 0.18%,
+      rgba(255, 255, 255, 0.05) 99.85%);
+  border-radius: 10px;
+  color: #fff;
+  margin-top: 30px;
+  padding: 20px 30px;
+}
+
+.question-section .question {
+  padding-bottom: 15px;
+}
+
 @media only screen and (max-width: 700px) {
   .box-container {
     padding: 0 20px;
