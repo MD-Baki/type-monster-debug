@@ -38,16 +38,16 @@
             </div>
             <div class="question-section">
                 <div class="question">
-                    <h2>Difference between global scope and blog scope?</h2>
+                    <h2>Difference between global scope and block scope?</h2>
                 </div>
                 <div class="answer">
-                    <p>A Block Scope Is The Area Within If, Switch Conditions Or For And While Loops. Generally
-                        Speaking, Whenever You See {Curly Brackets}, It Is A Block. In ES6, Const And Let Keywords Allow
-                        Developers To Declare Variables In The Block Scope, Which Means Those Variables Exist Only
-                        Within The Corresponding Block.<br><br>
+                    <p>A variable exists inside or outside a block. If a variable is declared outside all functions or
+                        curly braces ({}), it exists in the global scope. The global variables can be accessed by any
+                        line of code in the program, including inside blocks.<br><br>
 
-                        The Area Outside All The Functions Is Consider The Global Scope And The Variables Defined Inside
-                        The Global Scope Can Be Accessed And Altered In Any Other Scopes.</p>
+                        This scope restricts the variable that is declared inside a specific block, from access by the
+                        outside of the block. The let & const keyword facilitates the variables to be block scoped. In
+                        order to access the variables of that specific block, we need to create an object for it.</p>
                 </div>
             </div>
             <div class="question-section">
@@ -55,8 +55,10 @@
                     <h2>How does JavaScript's event loop work?</h2>
                 </div>
                 <div class="answer">
-                    <p>An Event Loop Is Something That Pulls Stuff Out Of The Queue And Places It Onto The Function
-                        Execution Stack Whenever The Function Stack Becomes Empty.</p>
+                    <p>The event loop is a process that waits for the Call Stack to be clear before pushing callbacks
+                        from the Task Queue to the Call Stack. Once the Stack is clear, the event loop triggers and
+                        checks the Task Queue for available callbacks. If there are any, it pushes it to the Call Stack,
+                        waits for the Call Stack to be clear again, and repeats the same process.</p>
                 </div>
             </div>
             <div class="question-section">
@@ -64,9 +66,8 @@
                     <h2>How many ways can we get undefined?</h2>
                 </div>
                 <div class="answer">
-                    <p>1. Variable That Is Not Initialized. 2. Function With No Return. 3. Parameter That Is Not
-                        Passed.
-                        4. Property That Doesn't Exist On An Object. 5. Set A Value Direcly To Undefined. etc...</p>
+                    <p>Variable That Is Not Initialized, Function With No Return, Parameter That Is Not
+                        Passed, Property That Doesn't Exist On An Object, Set A Value Direcly To Undefined. etc...</p>
                 </div>
             </div>
         </div>
